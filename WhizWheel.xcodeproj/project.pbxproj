@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
+		330A1C4F0FDC1FA10097EC28 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 330A1C4E0FDC1FA10097EC28 /* license.txt */; };
+		331C4C8A0FDC0DBC00F77F56 /* wind_rose_scrawl_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 331C4C860FDC0DBC00F77F56 /* wind_rose_scrawl_icon.png */; };
+		331C4C8B0FDC0DBC00F77F56 /* wind_arrow_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 331C4C870FDC0DBC00F77F56 /* wind_arrow_icon.png */; };
+		331C4C8C0FDC0DBC00F77F56 /* more_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 331C4C880FDC0DBC00F77F56 /* more_icon.png */; };
+		331C4C8D0FDC0DBC00F77F56 /* navigation_arrow_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 331C4C890FDC0DBC00F77F56 /* navigation_arrow_icon.png */; };
+		331C4C920FDC0DD900F77F56 /* whizwheel_app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 331C4C910FDC0DD900F77F56 /* whizwheel_app_icon.png */; };
+		331C4C980FDC0E3000F77F56 /* WindView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 331C4C930FDC0E3000F77F56 /* WindView.xib */; };
+		331C4C990FDC0E3000F77F56 /* WindRoseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 331C4C940FDC0E3000F77F56 /* WindRoseView.xib */; };
+		331C4C9A0FDC0E3000F77F56 /* MoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 331C4C950FDC0E3000F77F56 /* MoreView.xib */; };
+		331C4C9B0FDC0E3000F77F56 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 331C4C960FDC0E3000F77F56 /* MainWindow.xib */; };
+		331C4C9C0FDC0E3000F77F56 /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 331C4C970FDC0E3000F77F56 /* NavigationView.xib */; };
+		331C4CA30FDC0E8000F77F56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CA00FDC0E8000F77F56 /* main.m */; };
+		331C4CA40FDC0E8000F77F56 /* AngleUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CA20FDC0E8000F77F56 /* AngleUtils.c */; };
+		331C4CB90FDC0ECF00F77F56 /* ConfigTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 331C4CB80FDC0ECF00F77F56 /* ConfigTableCell.xib */; };
+		331C4D060FDC0F6D00F77F56 /* DecimalNumberTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CD00FDC0F6D00F77F56 /* DecimalNumberTextFieldDelegate.m */; };
+		331C4D070FDC0F6D00F77F56 /* WhizzWheelAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CD50FDC0F6D00F77F56 /* WhizzWheelAppDelegate.m */; };
+		331C4D080FDC0F6D00F77F56 /* WindRoseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CD60FDC0F6D00F77F56 /* WindRoseViewController.m */; };
+		331C4D090FDC0F6D00F77F56 /* WindDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CD70FDC0F6D00F77F56 /* WindDetails.m */; };
+		331C4D0A0FDC0F6D00F77F56 /* TextSplitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CD80FDC0F6D00F77F56 /* TextSplitter.m */; };
+		331C4D0B0FDC0F6D00F77F56 /* WindRoseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CDA0FDC0F6D00F77F56 /* WindRoseCell.m */; };
+		331C4D0C0FDC0F6D00F77F56 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CDC0FDC0F6D00F77F56 /* NavigationViewController.m */; };
+		331C4D0D0FDC0F6D00F77F56 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CDE0FDC0F6D00F77F56 /* Configuration.m */; };
+		331C4D0E0FDC0F6D00F77F56 /* CompassSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CE10FDC0F6D00F77F56 /* CompassSelectorView.m */; };
+		331C4D0F0FDC0F6D00F77F56 /* ConfigTableSectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CE40FDC0F6D00F77F56 /* ConfigTableSectionDelegate.m */; };
+		331C4D100FDC0F6D00F77F56 /* ConfigTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CE50FDC0F6D00F77F56 /* ConfigTableCell.m */; };
+		331C4D110FDC0F6D00F77F56 /* DirectionTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CE60FDC0F6D00F77F56 /* DirectionTextFieldDelegate.m */; };
+		331C4D120FDC0F6D00F77F56 /* WindRoseResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CE70FDC0F6D00F77F56 /* WindRoseResultCell.m */; };
+		331C4D130FDC0F6D00F77F56 /* WebTableSectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CE80FDC0F6D00F77F56 /* WebTableSectionDelegate.m */; };
+		331C4D140FDC0F6D00F77F56 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CEC0FDC0F6D00F77F56 /* MoreViewController.m */; };
+		331C4D150FDC0F6D00F77F56 /* WindAdjustedPlanDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CED0FDC0F6D00F77F56 /* WindAdjustedPlanDetails.m */; };
+		331C4D160FDC0F6D00F77F56 /* CommonTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CEE0FDC0F6D00F77F56 /* CommonTextFieldDelegate.m */; };
+		331C4D170FDC0F6D00F77F56 /* WindRoseDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CEF0FDC0F6D00F77F56 /* WindRoseDetails.m */; };
+		331C4D180FDC0F6D00F77F56 /* WindCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CF10FDC0F6D00F77F56 /* WindCalculator.m */; };
+		331C4D190FDC0F6D00F77F56 /* WindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CF50FDC0F6D00F77F56 /* WindViewController.m */; };
+		331C4D1A0FDC0F6D00F77F56 /* NotificationNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CF70FDC0F6D00F77F56 /* NotificationNames.m */; };
+		331C4D1B0FDC0F6D00F77F56 /* TextFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CF80FDC0F6D00F77F56 /* TextFormatter.m */; };
+		331C4D1C0FDC0F6D00F77F56 /* TextValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CFC0FDC0F6D00F77F56 /* TextValidator.m */; };
+		331C4D1D0FDC0F6D00F77F56 /* WindCalculationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CFD0FDC0F6D00F77F56 /* WindCalculationOperation.m */; };
+		331C4D1E0FDC0F6D00F77F56 /* WindRoseHelpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4D010FDC0F6D00F77F56 /* WindRoseHelpCell.m */; };
+		331C4D1F0FDC0F6D00F77F56 /* NavigationPlanDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4D030FDC0F6D00F77F56 /* NavigationPlanDetails.m */; };
+		331C4D200FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4D040FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* WhizWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhizWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		330A1C4E0FDC1FA10097EC28 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		331C4C860FDC0DBC00F77F56 /* wind_rose_scrawl_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wind_rose_scrawl_icon.png; path = Resources/wind_rose_scrawl_icon.png; sourceTree = "<group>"; };
+		331C4C870FDC0DBC00F77F56 /* wind_arrow_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wind_arrow_icon.png; path = Resources/wind_arrow_icon.png; sourceTree = "<group>"; };
+		331C4C880FDC0DBC00F77F56 /* more_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = more_icon.png; path = Resources/more_icon.png; sourceTree = "<group>"; };
+		331C4C890FDC0DBC00F77F56 /* navigation_arrow_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navigation_arrow_icon.png; path = Resources/navigation_arrow_icon.png; sourceTree = "<group>"; };
+		331C4C910FDC0DD900F77F56 /* whizwheel_app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whizwheel_app_icon.png; path = Resources/whizwheel_app_icon.png; sourceTree = "<group>"; };
+		331C4C930FDC0E3000F77F56 /* WindView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WindView.xib; path = Resources/WindView.xib; sourceTree = "<group>"; };
+		331C4C940FDC0E3000F77F56 /* WindRoseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WindRoseView.xib; path = Resources/WindRoseView.xib; sourceTree = "<group>"; };
+		331C4C950FDC0E3000F77F56 /* MoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MoreView.xib; path = Resources/MoreView.xib; sourceTree = "<group>"; };
+		331C4C960FDC0E3000F77F56 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
+		331C4C970FDC0E3000F77F56 /* NavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NavigationView.xib; path = Resources/NavigationView.xib; sourceTree = "<group>"; };
+		331C4CA00FDC0E8000F77F56 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Other Sources/main.m"; sourceTree = "<group>"; };
+		331C4CA10FDC0E8000F77F56 /* AngleUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AngleUtils.h; path = "Other Sources/AngleUtils.h"; sourceTree = "<group>"; };
+		331C4CA20FDC0E8000F77F56 /* AngleUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = AngleUtils.c; path = "Other Sources/AngleUtils.c"; sourceTree = "<group>"; };
+		331C4CB80FDC0ECF00F77F56 /* ConfigTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ConfigTableCell.xib; path = Resources/ConfigTableCell.xib; sourceTree = "<group>"; };
+		331C4CCB0FDC0F4200F77F56 /* WhizWheel_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhizWheel_Prefix.pch; sourceTree = "<group>"; };
+		331C4CD00FDC0F6D00F77F56 /* DecimalNumberTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecimalNumberTextFieldDelegate.m; sourceTree = "<group>"; };
+		331C4CD10FDC0F6D00F77F56 /* DirectionTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionTextFieldDelegate.h; sourceTree = "<group>"; };
+		331C4CD20FDC0F6D00F77F56 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		331C4CD30FDC0F6D00F77F56 /* WhizzWheelAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhizzWheelAppDelegate.h; sourceTree = "<group>"; };
+		331C4CD40FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaturalNumberTextFieldDelegate.h; sourceTree = "<group>"; };
+		331C4CD50FDC0F6D00F77F56 /* WhizzWheelAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhizzWheelAppDelegate.m; sourceTree = "<group>"; };
+		331C4CD60FDC0F6D00F77F56 /* WindRoseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindRoseViewController.m; sourceTree = "<group>"; };
+		331C4CD70FDC0F6D00F77F56 /* WindDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindDetails.m; sourceTree = "<group>"; };
+		331C4CD80FDC0F6D00F77F56 /* TextSplitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSplitter.m; sourceTree = "<group>"; };
+		331C4CD90FDC0F6D00F77F56 /* WindRoseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindRoseCell.h; sourceTree = "<group>"; };
+		331C4CDA0FDC0F6D00F77F56 /* WindRoseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindRoseCell.m; sourceTree = "<group>"; };
+		331C4CDB0FDC0F6D00F77F56 /* WindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindViewController.h; sourceTree = "<group>"; };
+		331C4CDC0FDC0F6D00F77F56 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		331C4CDD0FDC0F6D00F77F56 /* CompassSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassSelectorView.h; sourceTree = "<group>"; };
+		331C4CDE0FDC0F6D00F77F56 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+		331C4CDF0FDC0F6D00F77F56 /* WindRoseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindRoseViewController.h; sourceTree = "<group>"; };
+		331C4CE00FDC0F6D00F77F56 /* TextValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextValidator.h; sourceTree = "<group>"; };
+		331C4CE10FDC0F6D00F77F56 /* CompassSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassSelectorView.m; sourceTree = "<group>"; };
+		331C4CE20FDC0F6D00F77F56 /* CommonTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTextFieldDelegate.h; sourceTree = "<group>"; };
+		331C4CE30FDC0F6D00F77F56 /* NotificationNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationNames.h; sourceTree = "<group>"; };
+		331C4CE40FDC0F6D00F77F56 /* ConfigTableSectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigTableSectionDelegate.m; sourceTree = "<group>"; };
+		331C4CE50FDC0F6D00F77F56 /* ConfigTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigTableCell.m; sourceTree = "<group>"; };
+		331C4CE60FDC0F6D00F77F56 /* DirectionTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionTextFieldDelegate.m; sourceTree = "<group>"; };
+		331C4CE70FDC0F6D00F77F56 /* WindRoseResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindRoseResultCell.m; sourceTree = "<group>"; };
+		331C4CE80FDC0F6D00F77F56 /* WebTableSectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebTableSectionDelegate.m; sourceTree = "<group>"; };
+		331C4CE90FDC0F6D00F77F56 /* WebTableSectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebTableSectionDelegate.h; sourceTree = "<group>"; };
+		331C4CEA0FDC0F6D00F77F56 /* DecimalNumberTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecimalNumberTextFieldDelegate.h; sourceTree = "<group>"; };
+		331C4CEB0FDC0F6D00F77F56 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		331C4CEC0FDC0F6D00F77F56 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		331C4CED0FDC0F6D00F77F56 /* WindAdjustedPlanDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindAdjustedPlanDetails.m; sourceTree = "<group>"; };
+		331C4CEE0FDC0F6D00F77F56 /* CommonTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTextFieldDelegate.m; sourceTree = "<group>"; };
+		331C4CEF0FDC0F6D00F77F56 /* WindRoseDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindRoseDetails.m; sourceTree = "<group>"; };
+		331C4CF00FDC0F6D00F77F56 /* WindDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindDetails.h; sourceTree = "<group>"; };
+		331C4CF10FDC0F6D00F77F56 /* WindCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindCalculator.m; sourceTree = "<group>"; };
+		331C4CF20FDC0F6D00F77F56 /* TextFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFormatter.h; sourceTree = "<group>"; };
+		331C4CF30FDC0F6D00F77F56 /* ConfigTableSectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigTableSectionDelegate.h; sourceTree = "<group>"; };
+		331C4CF40FDC0F6D00F77F56 /* WindRoseResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindRoseResultCell.h; sourceTree = "<group>"; };
+		331C4CF50FDC0F6D00F77F56 /* WindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindViewController.m; sourceTree = "<group>"; };
+		331C4CF60FDC0F6D00F77F56 /* WindAdjustedPlanDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindAdjustedPlanDetails.h; sourceTree = "<group>"; };
+		331C4CF70FDC0F6D00F77F56 /* NotificationNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationNames.m; sourceTree = "<group>"; };
+		331C4CF80FDC0F6D00F77F56 /* TextFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFormatter.m; sourceTree = "<group>"; };
+		331C4CF90FDC0F6D00F77F56 /* WindRoseHelpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindRoseHelpCell.h; sourceTree = "<group>"; };
+		331C4CFA0FDC0F6D00F77F56 /* NavigationPlanDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationPlanDetails.h; sourceTree = "<group>"; };
+		331C4CFB0FDC0F6D00F77F56 /* WindRoseDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindRoseDetails.h; sourceTree = "<group>"; };
+		331C4CFC0FDC0F6D00F77F56 /* TextValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextValidator.m; sourceTree = "<group>"; };
+		331C4CFD0FDC0F6D00F77F56 /* WindCalculationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindCalculationOperation.m; sourceTree = "<group>"; };
+		331C4CFE0FDC0F6D00F77F56 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		331C4CFF0FDC0F6D00F77F56 /* WindCalculationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindCalculationOperation.h; sourceTree = "<group>"; };
+		331C4D000FDC0F6D00F77F56 /* ConfigTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigTableCell.h; sourceTree = "<group>"; };
+		331C4D010FDC0F6D00F77F56 /* WindRoseHelpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindRoseHelpCell.m; sourceTree = "<group>"; };
+		331C4D020FDC0F6D00F77F56 /* TextSplitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSplitter.h; sourceTree = "<group>"; };
+		331C4D030FDC0F6D00F77F56 /* NavigationPlanDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationPlanDetails.m; sourceTree = "<group>"; };
+		331C4D040FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaturalNumberTextFieldDelegate.m; sourceTree = "<group>"; };
+		331C4D050FDC0F6D00F77F56 /* WindCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindCalculator.h; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				331C4CDD0FDC0F6D00F77F56 /* CompassSelectorView.h */,
+				331C4CE10FDC0F6D00F77F56 /* CompassSelectorView.m */,
+				331C4D000FDC0F6D00F77F56 /* ConfigTableCell.h */,
+				331C4CE50FDC0F6D00F77F56 /* ConfigTableCell.m */,
+				331C4CF30FDC0F6D00F77F56 /* ConfigTableSectionDelegate.h */,
+				331C4CE40FDC0F6D00F77F56 /* ConfigTableSectionDelegate.m */,
+				331C4CE20FDC0F6D00F77F56 /* CommonTextFieldDelegate.h */,
+				331C4CEE0FDC0F6D00F77F56 /* CommonTextFieldDelegate.m */,
+				331C4CFE0FDC0F6D00F77F56 /* Configuration.h */,
+				331C4CDE0FDC0F6D00F77F56 /* Configuration.m */,
+				331C4CEA0FDC0F6D00F77F56 /* DecimalNumberTextFieldDelegate.h */,
+				331C4CD00FDC0F6D00F77F56 /* DecimalNumberTextFieldDelegate.m */,
+				331C4CD10FDC0F6D00F77F56 /* DirectionTextFieldDelegate.h */,
+				331C4CE60FDC0F6D00F77F56 /* DirectionTextFieldDelegate.m */,
+				331C4CEB0FDC0F6D00F77F56 /* MoreViewController.h */,
+				331C4CEC0FDC0F6D00F77F56 /* MoreViewController.m */,
+				331C4CD40FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.h */,
+				331C4D040FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m */,
+				331C4CFA0FDC0F6D00F77F56 /* NavigationPlanDetails.h */,
+				331C4D030FDC0F6D00F77F56 /* NavigationPlanDetails.m */,
+				331C4CD20FDC0F6D00F77F56 /* NavigationViewController.h */,
+				331C4CDC0FDC0F6D00F77F56 /* NavigationViewController.m */,
+				331C4CE30FDC0F6D00F77F56 /* NotificationNames.h */,
+				331C4CF70FDC0F6D00F77F56 /* NotificationNames.m */,
+				331C4CF20FDC0F6D00F77F56 /* TextFormatter.h */,
+				331C4CF80FDC0F6D00F77F56 /* TextFormatter.m */,
+				331C4D020FDC0F6D00F77F56 /* TextSplitter.h */,
+				331C4CD80FDC0F6D00F77F56 /* TextSplitter.m */,
+				331C4CE00FDC0F6D00F77F56 /* TextValidator.h */,
+				331C4CFC0FDC0F6D00F77F56 /* TextValidator.m */,
+				331C4CD30FDC0F6D00F77F56 /* WhizzWheelAppDelegate.h */,
+				331C4CD50FDC0F6D00F77F56 /* WhizzWheelAppDelegate.m */,
+				331C4CF60FDC0F6D00F77F56 /* WindAdjustedPlanDetails.h */,
+				331C4CED0FDC0F6D00F77F56 /* WindAdjustedPlanDetails.m */,
+				331C4D050FDC0F6D00F77F56 /* WindCalculator.h */,
+				331C4CF10FDC0F6D00F77F56 /* WindCalculator.m */,
+				331C4CFF0FDC0F6D00F77F56 /* WindCalculationOperation.h */,
+				331C4CFD0FDC0F6D00F77F56 /* WindCalculationOperation.m */,
+				331C4CF00FDC0F6D00F77F56 /* WindDetails.h */,
+				331C4CD70FDC0F6D00F77F56 /* WindDetails.m */,
+				331C4CD90FDC0F6D00F77F56 /* WindRoseCell.h */,
+				331C4CDA0FDC0F6D00F77F56 /* WindRoseCell.m */,
+				331C4CFB0FDC0F6D00F77F56 /* WindRoseDetails.h */,
+				331C4CEF0FDC0F6D00F77F56 /* WindRoseDetails.m */,
+				331C4CF90FDC0F6D00F77F56 /* WindRoseHelpCell.h */,
+				331C4D010FDC0F6D00F77F56 /* WindRoseHelpCell.m */,
+				331C4CF40FDC0F6D00F77F56 /* WindRoseResultCell.h */,
+				331C4CE70FDC0F6D00F77F56 /* WindRoseResultCell.m */,
+				331C4CDF0FDC0F6D00F77F56 /* WindRoseViewController.h */,
+				331C4CD60FDC0F6D00F77F56 /* WindRoseViewController.m */,
+				331C4CDB0FDC0F6D00F77F56 /* WindViewController.h */,
+				331C4CF50FDC0F6D00F77F56 /* WindViewController.m */,
+				331C4CE90FDC0F6D00F77F56 /* WebTableSectionDelegate.h */,
+				331C4CE80FDC0F6D00F77F56 /* WebTableSectionDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* WhizWheel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* WhizWheel */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = WhizWheel;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				331C4CA00FDC0E8000F77F56 /* main.m */,
+				331C4CA10FDC0E8000F77F56 /* AngleUtils.h */,
+				331C4CA20FDC0E8000F77F56 /* AngleUtils.c */,
+				331C4CCB0FDC0F4200F77F56 /* WhizWheel_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3331841B0FDC0CFD0079EA39 /* Icons */,
+				331C4CB80FDC0ECF00F77F56 /* ConfigTableCell.xib */,
+				331C4C960FDC0E3000F77F56 /* MainWindow.xib */,
+				331C4C950FDC0E3000F77F56 /* MoreView.xib */,
+				331C4C970FDC0E3000F77F56 /* NavigationView.xib */,
+				331C4C940FDC0E3000F77F56 /* WindRoseView.xib */,
+				331C4C930FDC0E3000F77F56 /* WindView.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				330A1C4E0FDC1FA10097EC28 /* license.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765070DF74369002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3331841B0FDC0CFD0079EA39 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				331C4C910FDC0DD900F77F56 /* whizwheel_app_icon.png */,
+				331C4C860FDC0DBC00F77F56 /* wind_rose_scrawl_icon.png */,
+				331C4C870FDC0DBC00F77F56 /* wind_arrow_icon.png */,
+				331C4C880FDC0DBC00F77F56 /* more_icon.png */,
+				331C4C890FDC0DBC00F77F56 /* navigation_arrow_icon.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* WhizWheel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WhizWheel" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhizWheel;
+			productName = WhizWheel;
+			productReference = 1D6058910D05DD3D006BFB54 /* WhizWheel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WhizWheel" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* WhizWheel */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* WhizWheel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331C4C8A0FDC0DBC00F77F56 /* wind_rose_scrawl_icon.png in Resources */,
+				331C4C8B0FDC0DBC00F77F56 /* wind_arrow_icon.png in Resources */,
+				331C4C8C0FDC0DBC00F77F56 /* more_icon.png in Resources */,
+				331C4C8D0FDC0DBC00F77F56 /* navigation_arrow_icon.png in Resources */,
+				331C4C920FDC0DD900F77F56 /* whizwheel_app_icon.png in Resources */,
+				331C4C980FDC0E3000F77F56 /* WindView.xib in Resources */,
+				331C4C990FDC0E3000F77F56 /* WindRoseView.xib in Resources */,
+				331C4C9A0FDC0E3000F77F56 /* MoreView.xib in Resources */,
+				331C4C9B0FDC0E3000F77F56 /* MainWindow.xib in Resources */,
+				331C4C9C0FDC0E3000F77F56 /* NavigationView.xib in Resources */,
+				331C4CB90FDC0ECF00F77F56 /* ConfigTableCell.xib in Resources */,
+				330A1C4F0FDC1FA10097EC28 /* license.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331C4CA30FDC0E8000F77F56 /* main.m in Sources */,
+				331C4CA40FDC0E8000F77F56 /* AngleUtils.c in Sources */,
+				331C4D060FDC0F6D00F77F56 /* DecimalNumberTextFieldDelegate.m in Sources */,
+				331C4D070FDC0F6D00F77F56 /* WhizzWheelAppDelegate.m in Sources */,
+				331C4D080FDC0F6D00F77F56 /* WindRoseViewController.m in Sources */,
+				331C4D090FDC0F6D00F77F56 /* WindDetails.m in Sources */,
+				331C4D0A0FDC0F6D00F77F56 /* TextSplitter.m in Sources */,
+				331C4D0B0FDC0F6D00F77F56 /* WindRoseCell.m in Sources */,
+				331C4D0C0FDC0F6D00F77F56 /* NavigationViewController.m in Sources */,
+				331C4D0D0FDC0F6D00F77F56 /* Configuration.m in Sources */,
+				331C4D0E0FDC0F6D00F77F56 /* CompassSelectorView.m in Sources */,
+				331C4D0F0FDC0F6D00F77F56 /* ConfigTableSectionDelegate.m in Sources */,
+				331C4D100FDC0F6D00F77F56 /* ConfigTableCell.m in Sources */,
+				331C4D110FDC0F6D00F77F56 /* DirectionTextFieldDelegate.m in Sources */,
+				331C4D120FDC0F6D00F77F56 /* WindRoseResultCell.m in Sources */,
+				331C4D130FDC0F6D00F77F56 /* WebTableSectionDelegate.m in Sources */,
+				331C4D140FDC0F6D00F77F56 /* MoreViewController.m in Sources */,
+				331C4D150FDC0F6D00F77F56 /* WindAdjustedPlanDetails.m in Sources */,
+				331C4D160FDC0F6D00F77F56 /* CommonTextFieldDelegate.m in Sources */,
+				331C4D170FDC0F6D00F77F56 /* WindRoseDetails.m in Sources */,
+				331C4D180FDC0F6D00F77F56 /* WindCalculator.m in Sources */,
+				331C4D190FDC0F6D00F77F56 /* WindViewController.m in Sources */,
+				331C4D1A0FDC0F6D00F77F56 /* NotificationNames.m in Sources */,
+				331C4D1B0FDC0F6D00F77F56 /* TextFormatter.m in Sources */,
+				331C4D1C0FDC0F6D00F77F56 /* TextValidator.m in Sources */,
+				331C4D1D0FDC0F6D00F77F56 /* WindCalculationOperation.m in Sources */,
+				331C4D1E0FDC0F6D00F77F56 /* WindRoseHelpCell.m in Sources */,
+				331C4D1F0FDC0F6D00F77F56 /* NavigationPlanDetails.m in Sources */,
+				331C4D200FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WhizWheel_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = WhizWheel;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WhizWheel_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = WhizWheel;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.2.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WhizWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WhizWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
