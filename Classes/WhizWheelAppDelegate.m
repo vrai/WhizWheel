@@ -35,6 +35,8 @@
 
 - ( void ) doHandleDetailsNotificationWithObject: ( id ) object calculatorSetter: ( SEL ) setter;
 - ( void ) doQueueRecalculationOperation;
+
++ ( NSString * ) getConfigurationFilename;
 @end
 
 #pragma mark -
@@ -58,7 +60,7 @@
 - ( void ) applicationDidFinishLaunching: ( UIApplication * ) application
 {
     // Make sure the configuration gets initialised
-    [ Configuration initialiseDefaultConfigurationFromFile: CONFIGURATION_FILENAME ];
+    [ Configuration initialiseDefaultConfigurationFromFile: [ [ self class ] getConfigurationFilename ] ];
     
     // Create the background operation queue if required
     if ( ! backgroundQueue )
@@ -88,7 +90,13 @@
 - ( void ) applicationWillTerminate: ( UIApplication * ) application
 {
     // Save the configuration
-    [ [ Configuration defaultConfiguration ] saveToArchive: CONFIGURATION_FILENAME ];
+    [ [ Configuration defaultConfiguration ] saveToArchive: [ [ self class ] getConfigurationFilename ] ];
+}
+
++ ( NSString * ) getConfigurationFilename
+{
+    NSArray * paths = NSSearchPathForDirectoriesInDomains ( NSDocumentDirectory, NSUserDomainMask, YES );
+    return [ [ paths objectAtIndex: 0 ] stringByAppendingPathComponent: CONFIGURATION_FILENAME ];
 }
 
 #pragma mark -
