@@ -18,7 +18,7 @@
 // 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 // ***************************************************************************
 
-#import "WhizzWheelAppDelegate.h"
+#import "WhizWheelAppDelegate.h"
 #import "Configuration.h"
 #import "WindCalculator.h"
 #import "WindCalculationOperation.h"
@@ -28,7 +28,7 @@
 
 #pragma mark -
 
-@interface WhizzWheelAppDelegate ( )
+@interface WhizWheelAppDelegate ( )
 - ( void ) handleWindDetailsNotification: ( NSNotification * ) notification;
 - ( void ) handleNavigationDetailsNotification: ( NSNotification * ) notification;
 - ( void ) handleWindCalculatorConsumerNotification: ( NSNotification * ) notification;
@@ -39,7 +39,7 @@
 
 #pragma mark -
 
-@implementation WhizzWheelAppDelegate
+@implementation WhizWheelAppDelegate
 
 @synthesize window;
 @synthesize tabBarController;

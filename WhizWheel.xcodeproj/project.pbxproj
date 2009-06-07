@@ -25,7 +25,7 @@
 		331C4CA40FDC0E8000F77F56 /* AngleUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CA20FDC0E8000F77F56 /* AngleUtils.c */; };
 		331C4CB90FDC0ECF00F77F56 /* ConfigTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 331C4CB80FDC0ECF00F77F56 /* ConfigTableCell.xib */; };
 		331C4D060FDC0F6D00F77F56 /* DecimalNumberTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CD00FDC0F6D00F77F56 /* DecimalNumberTextFieldDelegate.m */; };
-		331C4D070FDC0F6D00F77F56 /* WhizzWheelAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CD50FDC0F6D00F77F56 /* WhizzWheelAppDelegate.m */; };
+		331C4D070FDC0F6D00F77F56 /* WhizWheelAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CD50FDC0F6D00F77F56 /* WhizWheelAppDelegate.m */; };
 		331C4D080FDC0F6D00F77F56 /* WindRoseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CD60FDC0F6D00F77F56 /* WindRoseViewController.m */; };
 		331C4D090FDC0F6D00F77F56 /* WindDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CD70FDC0F6D00F77F56 /* WindDetails.m */; };
 		331C4D0A0FDC0F6D00F77F56 /* TextSplitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4CD80FDC0F6D00F77F56 /* TextSplitter.m */; };
@@ -77,9 +77,9 @@
 		331C4CD00FDC0F6D00F77F56 /* DecimalNumberTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecimalNumberTextFieldDelegate.m; sourceTree = "<group>"; };
 		331C4CD10FDC0F6D00F77F56 /* DirectionTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionTextFieldDelegate.h; sourceTree = "<group>"; };
 		331C4CD20FDC0F6D00F77F56 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
-		331C4CD30FDC0F6D00F77F56 /* WhizzWheelAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhizzWheelAppDelegate.h; sourceTree = "<group>"; };
+		331C4CD30FDC0F6D00F77F56 /* WhizWheelAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhizWheelAppDelegate.h; sourceTree = "<group>"; };
 		331C4CD40FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaturalNumberTextFieldDelegate.h; sourceTree = "<group>"; };
-		331C4CD50FDC0F6D00F77F56 /* WhizzWheelAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhizzWheelAppDelegate.m; sourceTree = "<group>"; };
+		331C4CD50FDC0F6D00F77F56 /* WhizWheelAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhizWheelAppDelegate.m; sourceTree = "<group>"; };
 		331C4CD60FDC0F6D00F77F56 /* WindRoseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindRoseViewController.m; sourceTree = "<group>"; };
 		331C4CD70FDC0F6D00F77F56 /* WindDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindDetails.m; sourceTree = "<group>"; };
 		331C4CD80FDC0F6D00F77F56 /* TextSplitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextSplitter.m; sourceTree = "<group>"; };
@@ -178,8 +178,8 @@
 				331C4CD80FDC0F6D00F77F56 /* TextSplitter.m */,
 				331C4CE00FDC0F6D00F77F56 /* TextValidator.h */,
 				331C4CFC0FDC0F6D00F77F56 /* TextValidator.m */,
-				331C4CD30FDC0F6D00F77F56 /* WhizzWheelAppDelegate.h */,
-				331C4CD50FDC0F6D00F77F56 /* WhizzWheelAppDelegate.m */,
+				331C4CD30FDC0F6D00F77F56 /* WhizWheelAppDelegate.h */,
+				331C4CD50FDC0F6D00F77F56 /* WhizWheelAppDelegate.m */,
 				331C4CF60FDC0F6D00F77F56 /* WindAdjustedPlanDetails.h */,
 				331C4CED0FDC0F6D00F77F56 /* WindAdjustedPlanDetails.m */,
 				331C4D050FDC0F6D00F77F56 /* WindCalculator.h */,
@@ -342,7 +342,7 @@
 				331C4CA30FDC0E8000F77F56 /* main.m in Sources */,
 				331C4CA40FDC0E8000F77F56 /* AngleUtils.c in Sources */,
 				331C4D060FDC0F6D00F77F56 /* DecimalNumberTextFieldDelegate.m in Sources */,
-				331C4D070FDC0F6D00F77F56 /* WhizzWheelAppDelegate.m in Sources */,
+				331C4D070FDC0F6D00F77F56 /* WhizWheelAppDelegate.m in Sources */,
 				331C4D080FDC0F6D00F77F56 /* WindRoseViewController.m in Sources */,
 				331C4D090FDC0F6D00F77F56 /* WindDetails.m in Sources */,
 				331C4D0A0FDC0F6D00F77F56 /* TextSplitter.m in Sources */,
