@@ -231,8 +231,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -289,7 +287,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 487}, {356, 1060}}</string>
+							<string>{{0, 470}, {356, 1060}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -310,7 +308,7 @@
 							<real>334</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>1 59 1920 1119 0 0 1920 1178 </string>
+						<string>-2 59 1920 1119 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -321,6 +319,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -338,7 +338,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>33C5830D0FDC5293005BD106</string>
+										<string>33C583190FDD99E9005BD106</string>
 										<key>history</key>
 										<array>
 											<string>331C4CAC0FDC0E9F00F77F56</string>
@@ -480,7 +480,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1542, 676}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1 59 1920 1119 0 0 1920 1178 </string>
+								<string>-2 59 1920 1119 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -500,7 +500,7 @@
 								<key>Frame</key>
 								<string>{{0, 681}, {1542, 397}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1 59 1920 1119 0 0 1920 1178 </string>
+								<string>-2 59 1920 1119 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -660,12 +660,14 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>33C583160FDD9887005BD106</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>333184030FDC0BB90079EA39</string>
 		<string>/Volumes/Mirrored/Users/vrai/development/projects/apps/WhizWheel/WhizWheel.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>1 59 1920 1119 0 0 1920 1178 </string>
+	<string>-2 59 1920 1119 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -991,8 +993,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1028,7 +1028,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>33EE3C390FDC5156002424AE</string>
+				<string>33C583140FDD9887005BD106</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
