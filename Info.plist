@@ -11,7 +11,7 @@
 	<key>CFBundleIconFile</key>
 	<string>whizwheel_app_icon.png</string>
 	<key>CFBundleIdentifier</key>
-	<string>net.vrai.${PRODUCT_NAME:identifier}</string>
+	<string>net.vrai.WhizWheel</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -21,7 +21,9 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.0.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMainNibFile</key>
