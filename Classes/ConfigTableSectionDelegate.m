@@ -65,7 +65,9 @@
         [ self setCell: [ nib objectAtIndex: 0 ] ];
         
         // Configure the help text
-        [ [ cell htmlLabel ] loadHTMLString: [ [ TextFormatter defaultFormatter ] formatHTMLString: [ NSString stringWithCString: HTML_CONFIG_TEXT ] ]
+        [ [ cell htmlLabel ]   loadHTMLString: [ [ TextFormatter defaultFormatter ]
+                             formatHTMLString: [ NSString stringWithCString: HTML_CONFIG_TEXT
+                                                                   encoding: NSASCIIStringEncoding ] ]
                                     baseURL: nil ];
                                     
         // Wire up the slider updates
