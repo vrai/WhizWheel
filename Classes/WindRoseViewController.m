@@ -173,7 +173,7 @@ static NSArray * s_helpText = nil;
         // Retrieve the cell or create a new instance if this is the first time the index path has been seen
         UITableViewCell * cell = [ tableView dequeueReusableCellWithIdentifier: cellIdentifier ];
         if ( ! cell )
-            cell = [ [ [ WindRoseResultCell alloc ] initWithFrame: CGRectZero
+            cell = [ [ [ WindRoseResultCell alloc ] initWithStyle: UITableViewCellStyleDefault
                                                   reuseIdentifier: cellIdentifier
                                                          fontSize: WINDROSEVIEWCONTROLLER_OFFSETTABLE_FONTSIZE ] autorelease ];
         
@@ -198,7 +198,7 @@ static NSArray * s_helpText = nil;
         // Can we reuse a cell?
         UITableViewCell * cell = [ tableView dequeueReusableCellWithIdentifier: cellIdentifier ];
         if ( ! cell )
-            cell = [ [ [ WindRoseHelpCell alloc ] initWithFrame: CGRectZero
+            cell = [ [ [ WindRoseHelpCell alloc ] initWithStyle: UITableViewCellStyleDefault
                                                 reuseIdentifier: cellIdentifier
                                                        fontSize: WINDROSEVIEWCONTROLLER_OFFSETTABLE_FONTSIZE ] autorelease ];
                            

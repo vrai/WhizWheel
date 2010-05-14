@@ -89,7 +89,7 @@
         char errorBuffer [ 1024 ];
         regerror ( errorCode, target, errorBuffer, sizeof ( errorBuffer ) );
         NSString * error = [ NSString stringWithFormat: @"Failed to compile expression \"%@\" - %s", pattern, errorBuffer ];
-        NSLog ( error );
+        NSLog ( @"%@", error );
         @throw [ NSException exceptionWithName: @"RegularExpression Compilation"
                                         reason: error
                                       userInfo: nil ];

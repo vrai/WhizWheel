@@ -69,7 +69,8 @@
     NSAutoreleasePool * pool = [ [ NSAutoreleasePool alloc ] init ];
     
     [ self addSectionDelegate: [ WebTableSectionDelegate delegateWithName: @"About WhizWheel"
-                                                                  content: [ NSString stringWithCString: HTML_LICENSE_TEXT ]
+                                                                  content: [ NSString stringWithCString: HTML_LICENSE_TEXT 
+                                                                                               encoding: NSASCIIStringEncoding ]
                                                                    height: 200 ] ];
     [ self addSectionDelegate: ( configSectionDelegate = [ [ ConfigTableSectionDelegate delegateWithName: @"Configuration" ] retain ] ) ];
     

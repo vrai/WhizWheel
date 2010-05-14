@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
 		330A1C4F0FDC1FA10097EC28 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 330A1C4E0FDC1FA10097EC28 /* license.txt */; };
 		331C4C8A0FDC0DBC00F77F56 /* wind_rose_scrawl_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 331C4C860FDC0DBC00F77F56 /* wind_rose_scrawl_icon.png */; };
 		331C4C8B0FDC0DBC00F77F56 /* wind_arrow_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 331C4C870FDC0DBC00F77F56 /* wind_arrow_icon.png */; };
@@ -51,13 +48,13 @@
 		331C4D1E0FDC0F6D00F77F56 /* WindRoseHelpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4D010FDC0F6D00F77F56 /* WindRoseHelpCell.m */; };
 		331C4D1F0FDC0F6D00F77F56 /* NavigationPlanDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4D030FDC0F6D00F77F56 /* NavigationPlanDetails.m */; };
 		331C4D200FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4D040FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m */; };
+		33E9ADE61112359D00756D72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E9ADE51112359D00756D72 /* UIKit.framework */; };
+		33E9ADEE111235B000756D72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E9ADED111235B000756D72 /* Foundation.framework */; };
+		33FD4590119C949B0060C411 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FD458F119C949B0060C411 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* WhizWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhizWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		330A1C4E0FDC1FA10097EC28 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		331C4C860FDC0DBC00F77F56 /* wind_rose_scrawl_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wind_rose_scrawl_icon.png; path = Resources/wind_rose_scrawl_icon.png; sourceTree = "<group>"; };
 		331C4C870FDC0DBC00F77F56 /* wind_arrow_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wind_arrow_icon.png; path = Resources/wind_arrow_icon.png; sourceTree = "<group>"; };
@@ -128,6 +125,9 @@
 		331C4D030FDC0F6D00F77F56 /* NavigationPlanDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationPlanDetails.m; sourceTree = "<group>"; };
 		331C4D040FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaturalNumberTextFieldDelegate.m; sourceTree = "<group>"; };
 		331C4D050FDC0F6D00F77F56 /* WindCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindCalculator.h; sourceTree = "<group>"; };
+		33E9ADE51112359D00756D72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		33E9ADED111235B000756D72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		33FD458F119C949B0060C411 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,9 +136,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
-				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
+				33E9ADE61112359D00756D72 /* UIKit.framework in Frameworks */,
+				33E9ADEE111235B000756D72 /* Foundation.framework in Frameworks */,
+				33FD4590119C949B0060C411 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,9 +256,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
-				1D30AB110D05D00D00671497 /* Foundation.framework */,
-				288765070DF74369002DB57D /* CoreGraphics.framework */,
+				33FD458F119C949B0060C411 /* CoreGraphics.framework */,
+				33E9ADE51112359D00756D72 /* UIKit.framework */,
+				33E9ADED111235B000756D72 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -300,6 +300,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WhizWheel" */;
 			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
@@ -379,6 +382,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -393,6 +397,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WhizWheel_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
@@ -419,6 +424,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = WhizWheel_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
@@ -449,7 +455,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.2.1;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos3.0;
 			};
 			name = Release;
 		};

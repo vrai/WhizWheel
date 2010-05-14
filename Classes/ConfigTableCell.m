@@ -34,9 +34,9 @@
     [ super dealloc ];
 }
 
-- ( id ) initWithFrame: ( CGRect ) frame reuseIdentifier: ( NSString * ) reuseIdentifier
+- ( id ) initWithStyle: ( UITableViewCellStyle ) style reuseIdentifier: ( NSString * ) reuseIdentifier fontSize: ( CGFloat ) fontSize
 {
-    self = [ super initWithFrame: frame reuseIdentifier: reuseIdentifier ];
+    self = [ super initWithStyle: style reuseIdentifier: reuseIdentifier ];
     return self;
 }
 

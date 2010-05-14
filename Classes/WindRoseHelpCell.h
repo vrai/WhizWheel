@@ -27,7 +27,9 @@
 
 @property ( nonatomic, retain ) UILabel * contentLabel;
 
-- ( id ) initWithFrame: ( CGRect ) frame reuseIdentifier: ( NSString * ) reuseIdentifier fontSize: ( CGFloat ) fontSize;
+- ( id )   initWithStyle: ( UITableViewCellStyle ) style
+         reuseIdentifier: ( NSString * ) reuseIdentifier
+                fontSize: ( CGFloat ) fontSize;
 
 - ( void ) setHelpText: ( NSString * ) text;
 

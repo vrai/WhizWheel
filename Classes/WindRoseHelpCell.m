@@ -30,9 +30,9 @@
     [ super dealloc ];
 }
 
-- ( id ) initWithFrame: ( CGRect ) frame reuseIdentifier: ( NSString * ) reuseIdentifier fontSize: ( CGFloat ) fontSize
+- ( id ) initWithStyle: ( UITableViewCellStyle ) style reuseIdentifier: ( NSString * ) reuseIdentifier fontSize: ( CGFloat ) fontSize
 {
-    if ( self = [ super initWithFrame: frame reuseIdentifier: reuseIdentifier ] )
+    if ( self = [ super initWithStyle: style reuseIdentifier: reuseIdentifier ] )
     {
         // Create the colours we'll use on the label
         UIColor * textColour = [ UIColor darkGrayColor ];

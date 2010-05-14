@@ -19,7 +19,9 @@
 // ***************************************************************************
 @interface WindRoseCell : UITableViewCell
 
-- ( id ) initWithFrame: ( CGRect ) frame reuseIdentifier: ( NSString * ) reuseIdentifier fontSize: ( CGFloat ) fontSize;
+- ( id )   initWithStyle: ( UITableViewCellStyle ) style
+         reuseIdentifier: ( NSString * ) reuseIdentifier
+                fontSize: ( CGFloat ) fontSize;
 
 - ( UILabel * ) newLabelWithPrimaryColour: ( UIColor * ) primaryColour
                            selectedColour: ( UIColor * ) selectedColour

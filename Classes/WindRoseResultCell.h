@@ -34,7 +34,9 @@
 @property ( nonatomic, retain ) UILabel * speedLabel;
 @property ( readonly, nonatomic, retain ) UILabel * splitterLabel;
 
-- ( id ) initWithFrame: ( CGRect ) frame reuseIdentifier: ( NSString * ) reuseIdentifier fontSize: ( CGFloat ) fontSize;
+- ( id )   initWithStyle: ( UITableViewCellStyle ) style
+         reuseIdentifier: ( NSString * ) reuseIdentifier
+                fontSize: ( CGFloat ) fontSize;
 
 - ( void ) setDirection: ( int ) direction offset: ( int ) offset speed: ( int ) speed;
 

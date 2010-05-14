@@ -27,14 +27,14 @@
     [ super dealloc ];
 }
 
-- ( id ) initWithFrame: ( CGRect ) frame reuseIdentifier: ( NSString * ) reuseIdentifier
+- ( id ) initWithStyle: ( UITableViewCellStyle ) style reuseIdentifier: ( NSString * ) reuseIdentifier
 {
-    return [ super initWithFrame:frame reuseIdentifier:reuseIdentifier ];
+    return [ super initWithStyle: style reuseIdentifier:reuseIdentifier ];
 }
 
-- ( id ) initWithFrame: ( CGRect ) frame reuseIdentifier: ( NSString * ) reuseIdentifier fontSize: ( CGFloat ) fontSize
+- ( id ) initWithStyle: ( UITableViewCellStyle ) style reuseIdentifier: ( NSString * ) reuseIdentifier fontSize: ( CGFloat ) fontSize
 {
-    return [ super initWithFrame:frame reuseIdentifier:reuseIdentifier ];
+    return [ super initWithStyle: style reuseIdentifier: reuseIdentifier ];
 }
 
 #pragma mark -
