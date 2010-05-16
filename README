@@ -1,0 +1,41 @@
+WhizWheel is a simple iPhone application for pilots that provides a faster
+alternative to the primary navigation calculations generally performed with a
+circular slide rule (such as the CRP-1). Namely the calculation of track,
+ground speed and flight time for a given air speed and heading, given the
+current wind speed and direction.
+
+As well as calculating the wind effect for a single point, the application
+can help with ad-hoc navigation (such as diversions) by generating a
+textual "wind rose" that shows the effect of wind in all directions; at
+either 30 or 45 degree intervals.
+
+As it is an iPhone application, the iPhone SDK is required to build
+WhizWheel. The SDK will also allow WhizWheel to be run on the iPhone
+simulator. To install your own builds of the application on an actual
+iPhone requires an iPhone Developer Program membership.
+
+The WhizWheel application can be downloaded in binary form, for free, from
+the iTunes AppStore:
+
+    itms://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=319560423
+
+-----
+
+Copyright 2009 - 2010
+Vrai Stacey <vrai.stacey@gmail.com>
+
+This file is part of WhizWheel.
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
