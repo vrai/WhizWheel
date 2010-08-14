@@ -1,7 +1,5 @@
 // ***************************************************************************
-//              WhizWheel 1.0.0 - Copyright Vrai Stacey 2009
-//
-// $Id$
+//            WhizWheel 1.0.1 - Copyright Vrai Stacey 2009 - 2010
 //
 // This program is free software; you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -22,6 +20,7 @@
 
 NSString * const ConfigurationUpdated          = @"ConfigurationUpdated";
 NSString * const NavigationDetailsPublished    = @"NavigationDetailsPublished";
+NSString * const NavigationDetailsLoaded       = @"NavigationDetailsLoaded";
 NSString * const NavigationResultsPublished    = @"NavigationResultsPublished";
 NSString * const WindCalculatorConsumerCreated = @"WindCalculatorConsumerCreated";
 NSString * const WindDetailsInternalPublished  = @"WindDetailsInternalPublished";

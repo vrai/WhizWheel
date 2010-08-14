@@ -1,7 +1,5 @@
 // ***************************************************************************
-//              WhizWheel 1.0.0 - Copyright Vrai Stacey 2009
-//
-// $Id$
+//              WhizWheel 1.0.1 - Copyright Vrai Stacey 2009 - 2010
 //
 // This program is free software; you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -32,6 +30,7 @@
 @interface WindViewController ( )
 - ( void ) publishWindDirectionAndSpeed: ( BOOL ) internalOnly;
 - ( void ) silentlySetWindDetails: ( WindDetails * ) newWindDetails;
+- ( void ) updateTextFields;
 - ( void ) handleWindDetailsNotification: ( NSNotification * ) notification;
 - ( void ) handleWindDetailsRepublishNotification: ( NSNotification * ) notification;
 - ( void ) handleConfigurationUpdate: ( NSNotification * ) notification;
@@ -106,12 +105,15 @@
                                                                                       target: self
                                                                                      maximum: 100 ];
     
-    // Wire up the delegates to the fields
+    // Wire up the delegates to the fields and display the current values
     [ directionTextField setDelegate: directionTextFieldDelegate ];
     [ speedTextField setDelegate: speedTextFieldDelegate ];
+    [ self updateTextFields ];
     
     // Configure the compass view
     [ compassSelectorView setMaximumMagnitude: [ [ Configuration defaultConfiguration ] maximumWindMagnitude ] ];
+    if ( windDetails )
+        [ self publishWindDirectionAndSpeed: YES ];
 }
 
 - ( void ) viewWillDisappear: ( BOOL ) animated
@@ -161,18 +163,30 @@
 - ( void ) silentlySetWindDetails: ( WindDetails * ) newWindDetails
 {
     if ( ! [ newWindDetails isEqual: windDetails ] )
-    {
+    {    
         // New wind details are different from current ones - overright the old ones
         [ windDetails setDirection: [ newWindDetails direction ] ];
         [ windDetails setSpeed: [ newWindDetails speed ] ];
         windDetailsDirty = YES;
         
         // Set the text fields to match the new values
-        [ directionTextFieldDelegate setText: [ NSString stringWithFormat: @"%d", [ windDetails direction ] ]
-                                    forField: directionTextField ];
-        [ speedTextFieldDelegate setText: [ NSString stringWithFormat: @"%d", [ windDetails speed ] ]
-                                forField: speedTextField ];
+        [ self updateTextFields ];
     }
+}
+
+- ( void ) updateTextFields
+{
+    NSAutoreleasePool * pool = [ [ NSAutoreleasePool alloc ] init ];
+    
+    NSString * direction = [ windDetails direction ] < 0 ? [ NSString stringWithFormat: @"" ]
+                                                         : [ NSString stringWithFormat: @"%d", [ windDetails direction ] ];
+    NSString * speed = [ windDetails speed ] < 0 ? [ NSString stringWithFormat: @"" ]
+                                                 : [ NSString stringWithFormat: @"%d", [ windDetails speed ] ];
+
+    [ directionTextFieldDelegate setText: direction forField: directionTextField ];
+    [ speedTextFieldDelegate setText: speed forField: speedTextField ];
+                            
+    [ pool release ];
 }
 
 #pragma mark -

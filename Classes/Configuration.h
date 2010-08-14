@@ -1,7 +1,5 @@
 // ***************************************************************************
-//              WhizWheel 1.0.0 - Copyright Vrai Stacey 2009
-//
-// $Id$
+//            WhizWheel 1.0.1 - Copyright Vrai Stacey 2009 - 2010
 //
 // This program is free software; you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -18,16 +16,40 @@
 // 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 // ***************************************************************************
 
+#import "NavigationPlanDetails.h"
+#import "WindDetails.h"
+
 @interface Configuration : NSObject <NSCoding, NSCopying>
 {
+    // Configuration for "Wind" tab
+    int windDirection;
+    int windSpeed;
+    
+    // Configuration for "Navigation" tab
+    int track;
+    int targetSpeed;
+    NSDecimalNumber * distance;
+
+    // Configuration for "More" tab
     float maximumWindMagnitude;
 }
 
-- ( void ) saveToArchive: ( NSString * ) path;
-
 @property float maximumWindMagnitude;
+@property int windDirection;
+@property int windSpeed;
+@property int track;
+@property int targetSpeed;
+@property ( copy ) NSDecimalNumber * distance;
 
 + ( id ) defaultConfiguration;
 + ( id ) initialiseDefaultConfigurationFromFile: ( NSString * ) path;
+
+- ( void ) saveToArchive: ( NSString * ) path;
+
+- ( void ) setFromWindDetails: ( WindDetails * ) details;
+- ( WindDetails * ) getAsWindDetails;
+
+- ( void ) setFromNavigationPlanDetails: ( NavigationPlanDetails * ) details;
+- ( NavigationPlanDetails * ) getAsNavigationPlanDetails;
 
 @end

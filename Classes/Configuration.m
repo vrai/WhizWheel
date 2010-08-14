@@ -1,7 +1,5 @@
 // ***************************************************************************
-//              WhizWheel 1.0.0 - Copyright Vrai Stacey 2009
-//
-// $Id$
+//            WhizWheel 1.0.1 - Copyright Vrai Stacey 2009 - 2010
 //
 // This program is free software; you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -23,6 +21,24 @@
 
 #define CODER_KEY_CONFIGURATION         @"Configuration"
 #define CODER_KEY_MAXIMUMWINDMAGNITUDE  @"maximumWindMagnitude"
+#define CODER_KEY_WINDDIRECTION         @"windDirection"
+#define CODER_KEY_WINDSPEED             @"windSpeed"
+#define CODER_KEY_VERSION               @"version"
+#define CODER_KEY_TRACK                 @"track"
+#define CODER_KEY_TARGET_SPEED          @"targetSpeed"
+#define CODER_KEY_DISTANCE              @"distance"
+
+#define DEFAULT_WIND_DIRECTION  -1
+#define DEFAULT_WIND_SPEED      -1
+#define DEFAULT_MAX_WIND_MAG    50.0f
+#define DEFAULT_TRACK           -1
+#define DEFAULT_TARGET_SPEED    -1
+#define DEFAULT_DISTANCE        nil
+
+#define VERSION_1_0_0      10000        // Version 1.0.0 didn't have this configuration field
+#define VERSION_1_0_1      10010
+
+#define VERSION_CURRENT    VERSION_1_0_1
 
 static Configuration * s_defaultInstance = 0;
 
@@ -37,12 +53,22 @@ static Configuration * s_defaultInstance = 0;
 @implementation Configuration
 
 @synthesize maximumWindMagnitude;
+@synthesize windDirection;
+@synthesize windSpeed;
+@synthesize track;
+@synthesize targetSpeed;
+@synthesize distance;
 
 - ( id ) init
 {
     if ( self = [ super init ] )
     {
-        maximumWindMagnitude = 50.0f;
+        windDirection = DEFAULT_WIND_DIRECTION;
+        windSpeed = DEFAULT_WIND_SPEED;
+        maximumWindMagnitude = DEFAULT_MAX_WIND_MAG;
+        track = DEFAULT_TRACK;
+        targetSpeed = DEFAULT_TARGET_SPEED;
+        distance = DEFAULT_DISTANCE;
     }
     return self;
 }
@@ -56,6 +82,29 @@ static Configuration * s_defaultInstance = 0;
     }
 }
 
+- ( void ) setFromWindDetails: ( WindDetails * ) details
+{
+    windDirection = [ details direction ];
+    windSpeed = [ details speed ];
+}
+
+- ( WindDetails * ) getAsWindDetails
+{
+    return [ [ [ WindDetails alloc ] initWithDirection: windDirection speed: windSpeed ] autorelease ];
+}
+
+- ( void ) setFromNavigationPlanDetails: ( NavigationPlanDetails * ) details
+{
+    track = [ details track ];
+    targetSpeed = [ details targetAirSpeed ];
+    distance = [ details distance ];
+}
+
+- ( NavigationPlanDetails * ) getAsNavigationPlanDetails
+{
+    return [ [ [ NavigationPlanDetails alloc ] initWithTrack: track targetAirSpeed: targetSpeed distance: distance ] autorelease ];
+}
+
 #pragma mark -
 #pragma mark NSCoding implementation
 
@@ -63,14 +112,42 @@ static Configuration * s_defaultInstance = 0;
 {
     if ( self = [ super init ] )
     {
-        maximumWindMagnitude = [ decoder decodeFloatForKey: CODER_KEY_MAXIMUMWINDMAGNITUDE ];
+        // The version number is used to determine what can be loaded. Version 1.0.0 has no version information.
+        int version = [ decoder decodeIntForKey: CODER_KEY_VERSION ];
+        switch ( version )
+        {
+            case VERSION_1_0_1:
+                windDirection = [ decoder decodeIntForKey: CODER_KEY_WINDDIRECTION ];
+                windSpeed = [ decoder decodeIntForKey: CODER_KEY_WINDSPEED ];
+                maximumWindMagnitude = [ decoder decodeFloatForKey: CODER_KEY_MAXIMUMWINDMAGNITUDE ];
+                track = [ decoder decodeIntForKey: CODER_KEY_TRACK ];
+                targetSpeed = [ decoder decodeIntForKey: CODER_KEY_TARGET_SPEED ];
+                distance = [ [ decoder decodeObjectForKey: CODER_KEY_DISTANCE ] retain ];
+                break;
+        
+            default:
+                // No version information - use default values
+                windDirection = DEFAULT_WIND_DIRECTION;
+                windSpeed = DEFAULT_WIND_SPEED;
+                maximumWindMagnitude = DEFAULT_MAX_WIND_MAG;
+                track = DEFAULT_TRACK;
+                targetSpeed = DEFAULT_TARGET_SPEED;
+                distance = DEFAULT_DISTANCE;
+                break;
+        }
     }
     return self;
 }
 
 - ( void ) encodeWithCoder: ( NSCoder * ) encoder
 {
-    [ encoder encodeFloat: maximumWindMagnitude forKey: CODER_KEY_MAXIMUMWINDMAGNITUDE ];
+    [ encoder encodeInt:    VERSION_CURRENT      forKey: CODER_KEY_VERSION ];
+    [ encoder encodeInt:    windDirection        forKey: CODER_KEY_WINDDIRECTION ];
+    [ encoder encodeInt:    windSpeed            forKey: CODER_KEY_WINDSPEED ];
+    [ encoder encodeFloat:  maximumWindMagnitude forKey: CODER_KEY_MAXIMUMWINDMAGNITUDE ];
+    [ encoder encodeInt:    track                forKey: CODER_KEY_TRACK ];
+    [ encoder encodeInt:    targetSpeed          forKey: CODER_KEY_TARGET_SPEED ];
+    [ encoder encodeObject: distance             forKey: CODER_KEY_DISTANCE ];
 }
 
 - ( void ) saveToArchive: ( NSString * ) path
@@ -98,6 +175,8 @@ static Configuration * s_defaultInstance = 0;
 {
     Configuration * copy = [ [ [ self class ] allocWithZone: zone ] init ];
     copy.maximumWindMagnitude = maximumWindMagnitude;
+    copy.windDirection = windDirection;
+    copy.windSpeed = windSpeed;
     return copy;
 }
 

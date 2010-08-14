@@ -1,7 +1,5 @@
 // ***************************************************************************
-//              WhizWheel 1.0.0 - Copyright Vrai Stacey 2009
-//
-// $Id$
+//              WhizWheel 1.0.1 - Copyright Vrai Stacey 2009 - 2010
 //
 // This program is free software; you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -85,6 +83,16 @@
                                                 selector: @selector ( handleWindCalculatorConsumerNotification: )
                                                     name: WindCalculatorConsumerCreated
                                                   object: nil ];
+                                                  
+    // Publish the wind and navigation details from the config
+    NSAutoreleasePool * pool = [ [ NSAutoreleasePool alloc ] init ];
+    id windDetails = [ [ Configuration defaultConfiguration ] getAsWindDetails ];
+    id navigationPlanDetails = [ [ Configuration defaultConfiguration ] getAsNavigationPlanDetails ];
+    [ [ NSNotificationCenter defaultCenter ] postNotification: [ NSNotification notificationWithName: WindDetailsPublished
+                                                                                              object: windDetails ] ];
+    [ [ NSNotificationCenter defaultCenter ] postNotification: [ NSNotification notificationWithName: NavigationDetailsLoaded
+                                                                                              object: navigationPlanDetails ] ];
+    [ pool release ];
 }
 
 - ( void ) applicationWillTerminate: ( UIApplication * ) application
@@ -105,13 +113,19 @@
 - ( void ) handleWindDetailsNotification: ( NSNotification * ) notification
 {
     if ( [ notification name ] == WindDetailsPublished )
+    {
         [ self doHandleDetailsNotificationWithObject: [ notification object ] calculatorSetter: @selector ( setWindDetails: ) ];
+        [ [ Configuration defaultConfiguration ] setFromWindDetails: [ notification object ] ];
+    }
 }
 
 - ( void ) handleNavigationDetailsNotification: ( NSNotification * ) notification
 {
     if ( [ notification name ] == NavigationDetailsPublished )
+    {
         [ self doHandleDetailsNotificationWithObject: [ notification object ] calculatorSetter: @selector ( setNavigationPlanDetails: ) ];
+        [ [ Configuration defaultConfiguration ] setFromNavigationPlanDetails: [ notification object ] ];
+    }
 }
 
 - ( void ) handleWindCalculatorConsumerNotification: ( NSNotification * ) notification

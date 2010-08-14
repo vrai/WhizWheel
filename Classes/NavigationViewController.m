@@ -1,7 +1,5 @@
 // ***************************************************************************
-//              WhizWheel 1.0.0 - Copyright Vrai Stacey 2009
-//
-// $Id$
+//            WhizWheel 1.0.1 - Copyright Vrai Stacey 2009 - 2010
 //
 // This program is free software; you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -29,8 +27,10 @@
 
 @interface NavigationViewController ( )
 - ( void ) updateNavigationResults;
+- ( void ) updateNavigationPlanDetails;
 - ( void ) publishNavigationPlanDetails;
 - ( void ) handleNavigationResultNotification: ( NSNotification * ) notification;
+- ( void ) handleNavigationLoadedNotification: ( NSNotification * ) notification;
 @end
 
 #pragma mark -
@@ -53,6 +53,13 @@
     {
         navigationPlanDetails = [ [ NavigationPlanDetails alloc ] init ];
         navigationPlanResults = nil;
+        
+        // Listen for navigation details being loaded from the config file
+        [ [ NSNotificationCenter defaultCenter ] addObserver: self
+                                                    selector: @selector ( handleNavigationLoadedNotification: )
+                                                        name: NavigationDetailsLoaded
+                                                      object: nil ];
+        
     }
     return self;
 }
@@ -102,8 +109,9 @@
                                                 selector: @selector ( handleNavigationResultNotification: )
                                                     name: NavigationResultsPublished
                                                   object: nil ];
-  
+
     // Make sure the display is ready
+    [ self updateNavigationPlanDetails ];
     [ self updateNavigationResults ];
 }
 
@@ -138,7 +146,7 @@
 }
 
 #pragma mark -
-#pragma mark Results display
+#pragma mark Display updaters
 
 - ( void ) updateNavigationResults
 {
@@ -208,6 +216,26 @@
     [ flightTimeLabel setFont: [ [ flightTimeLabel font ] fontWithSize: fontSize ] ];
 }
 
+- ( void ) updateNavigationPlanDetails
+{
+    if ( ! ( [ self isViewLoaded ] && navigationPlanDetails ) )
+        return;
+        
+    NSAutoreleasePool * pool = [ [ NSAutoreleasePool alloc ] init ];
+      
+    if ( [ navigationPlanDetails track ] >= 0 )
+        [ trackTextFieldDelegate setText: [ NSString stringWithFormat: @"%d", [ navigationPlanDetails track ] ]
+                                forField: trackTextField ];
+    if ( [ navigationPlanDetails targetAirSpeed ] >= 0 )
+        [ tasTextFieldDelegate setText: [ NSString stringWithFormat: @"%d", [ navigationPlanDetails targetAirSpeed ] ]
+                              forField: tasTextField ];
+    if ( [ navigationPlanDetails distance ] )
+        [ distanceTextFieldDelegate setText: [ [ navigationPlanDetails distance ] stringValue ]
+                                   forField: distanceTextField ];
+    
+    [ pool release ];
+}
+
 #pragma mark -
 #pragma mark Notification handler and publishing logic
 
@@ -223,6 +251,16 @@
     {
         [ self setNavigationPlanResults: [ notification object ] ];
         [ self updateNavigationResults ];
+    }
+}
+
+- ( void ) handleNavigationLoadedNotification: ( NSNotification * ) notification
+{
+    if ( [ notification name ] == NavigationDetailsLoaded )
+    {
+        navigationPlanDetails = [ [ notification object ] retain ];
+        [ self updateNavigationPlanDetails ];
+        [ self publishNavigationPlanDetails ];
     }
 }
 
