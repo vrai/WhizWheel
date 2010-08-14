@@ -85,7 +85,7 @@
     [ directionTextField release ];
     [ speedTextField release ];
     [ directionTextFieldDelegate release ];
-    [ NaturalNumberTextFieldDelegate release ];
+    [ speedTextFieldDelegate release ];
     [ super dealloc ];
 }
 
