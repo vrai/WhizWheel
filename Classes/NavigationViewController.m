@@ -120,8 +120,8 @@
 
 - ( void ) setNavigationTrack: ( NSString * ) track
 {
-    [ navigationPlanDetails setTrack: [ track length ] > 0 ? [ track intValue ]
-                                                           : -1 ];
+    [ navigationPlanDetails setTrack: [ track length ] > 0 ? [ track intValue ] % 360
+                                                         : -1 ];
     [ track release ];
 
     [ self publishNavigationPlanDetails ];

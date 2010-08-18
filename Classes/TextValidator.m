@@ -57,7 +57,7 @@
     if ( ! [ self evaluateRegularExpression: &directionRegex string: string ] )
         return NO;
 
-    return [ string length ] <= 3 && [ string intValue ] >= 0 && [ string intValue ] <= 359;
+    return [ string length ] <= 3 && [ string intValue ] >= 0 && [ string intValue ] <= 360;
 }
 
 - ( BOOL ) validateStringAsNaturalNumber: ( NSString * ) string

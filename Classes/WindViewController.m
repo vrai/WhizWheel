@@ -133,8 +133,8 @@
 
 - ( void ) setWindDirection: ( NSString * ) direction
 {
-    const int newDirection = [ direction length ] > 0 ? [ direction intValue ]
-                                                      : -1;
+    const int newDirection = [ direction length ] > 0 ? [ direction intValue ] % 360
+                                                      : - 1;
     [ direction release ];
     
     if ( newDirection != [ windDetails direction ] )
