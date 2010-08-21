@@ -50,6 +50,7 @@
 		331C4D200FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4D040FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m */; };
 		33E9ADE61112359D00756D72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E9ADE51112359D00756D72 /* UIKit.framework */; };
 		33E9ADEE111235B000756D72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E9ADED111235B000756D72 /* Foundation.framework */; };
+		33F082C51220559E00015347 /* whizwheel_app_icon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F082C41220559E00015347 /* whizwheel_app_icon_57x57.png */; };
 		33FD4590119C949B0060C411 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FD458F119C949B0060C411 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -127,8 +128,9 @@
 		331C4D050FDC0F6D00F77F56 /* WindCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindCalculator.h; sourceTree = "<group>"; };
 		33E9ADE51112359D00756D72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		33E9ADED111235B000756D72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		33F082C41220559E00015347 /* whizwheel_app_icon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whizwheel_app_icon_57x57.png; path = Resources/whizwheel_app_icon_57x57.png; sourceTree = "<group>"; };
 		33FD458F119C949B0060C411 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +270,7 @@
 			children = (
 				331C4C910FDC0DD900F77F56 /* whizwheel_app_icon.png */,
 				331C4C860FDC0DBC00F77F56 /* wind_rose_scrawl_icon.png */,
+				33F082C41220559E00015347 /* whizwheel_app_icon_57x57.png */,
 				331C4C870FDC0DBC00F77F56 /* wind_arrow_icon.png */,
 				331C4C880FDC0DBC00F77F56 /* more_icon.png */,
 				331C4C890FDC0DBC00F77F56 /* navigation_arrow_icon.png */,
@@ -332,6 +335,7 @@
 				331C4C9C0FDC0E3000F77F56 /* NavigationView.xib in Resources */,
 				331C4CB90FDC0ECF00F77F56 /* ConfigTableCell.xib in Resources */,
 				330A1C4F0FDC1FA10097EC28 /* license.txt in Resources */,
+				33F082C51220559E00015347 /* whizwheel_app_icon_57x57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,21 +409,26 @@
 			};
 			name = Release;
 		};
-		33EE3C260FDC4F27002424AE /* Distribution */ = {
+		3329D07312204814002A8F38 /* Distro 1.0.1 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Vrai Stacey";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8EEF035C-78E3-404E-809D-51E51E3FEF02";
-				SDKROOT = iphoneos2.2.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
 			};
-			name = Distribution;
+			name = "Distro 1.0.1";
 		};
-		33EE3C270FDC4F27002424AE /* Distribution */ = {
+		3329D07412204814002A8F38 /* Distro 1.0.1 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -430,7 +439,7 @@
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = WhizWheel;
 			};
-			name = Distribution;
+			name = "Distro 1.0.1";
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -454,9 +463,12 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Release;
 		};
@@ -468,7 +480,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
-				33EE3C270FDC4F27002424AE /* Distribution */,
+				3329D07412204814002A8F38 /* Distro 1.0.1 */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -478,7 +490,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
-				33EE3C260FDC4F27002424AE /* Distribution */,
+				3329D07312204814002A8F38 /* Distro 1.0.1 */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

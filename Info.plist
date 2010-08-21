@@ -9,7 +9,12 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>whizwheel_app_icon.png</string>
+	<string>whizwheel_app_icon_57x57.png</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>whizwheel_app_icon.png</string>
+		<string>whizwheel_app_icon_57x57.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>net.vrai.WhizWheel</string>
 	<key>CFBundleInfoDictionaryVersion</key>
