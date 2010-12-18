@@ -1,5 +1,5 @@
 // ***************************************************************************
-//           WhizWheel 1.0.2 - Copyright Vrai Stacey 2009, 2010
+//              WhizWheel 1.0.2 - Copyright Vrai Stacey 2010
 //
 // This program is free software; you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -16,20 +16,17 @@
 // 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 // ***************************************************************************
 
-@interface CompassSelectorView : UIView
-{
-    int currentAngle;
-    float currentMagnitude;
-    
-    float maximumMagnitude;
-    
-    CGImageRef compassFace;
+#include "ScalerUtils.h"
 
-    float screenScale;
+CGPoint scalePoint ( CGPoint source, float scale )
+{
+    return CGPointMake ( source.x * scale, source.y * scale );
 }
 
-@property float maximumMagnitude;
-
-- ( void ) setCurrentAngle: ( int ) angle magnitude: ( float ) magnitude;
-
-@end
+CGRect scaleRect ( CGRect source, float scale )
+{
+    return CGRectMake ( source.origin.x * scale,
+                        source.origin.y * scale,
+                        source.size.width * scale,
+                        source.size.height * scale );
+}

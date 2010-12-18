@@ -48,6 +48,12 @@
 		331C4D1E0FDC0F6D00F77F56 /* WindRoseHelpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4D010FDC0F6D00F77F56 /* WindRoseHelpCell.m */; };
 		331C4D1F0FDC0F6D00F77F56 /* NavigationPlanDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4D030FDC0F6D00F77F56 /* NavigationPlanDetails.m */; };
 		331C4D200FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4D040FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m */; };
+		33CBC71F12B80FC900B33271 /* whizwheel_app_icon_57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CBC71E12B80FC900B33271 /* whizwheel_app_icon_57x57@2x.png */; };
+		33CBC73C12BA92E500B33271 /* more_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CBC73B12BA92E500B33271 /* more_icon@2x.png */; };
+		33CBC74D12BCD71100B33271 /* navigation_arrow_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CBC74C12BCD71100B33271 /* navigation_arrow_icon@2x.png */; };
+		33CBC75312BCD7DA00B33271 /* wind_arrow_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CBC75212BCD7DA00B33271 /* wind_arrow_icon@2x.png */; };
+		33CBC75712BCDBDE00B33271 /* wind_rose_scrawl_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CBC75612BCDBDE00B33271 /* wind_rose_scrawl_icon@2x.png */; };
+		33CBC77912BCDE2400B33271 /* ScalerUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 33CBC77812BCDE2400B33271 /* ScalerUtils.c */; };
 		33E9ADE61112359D00756D72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E9ADE51112359D00756D72 /* UIKit.framework */; };
 		33E9ADEE111235B000756D72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E9ADED111235B000756D72 /* Foundation.framework */; };
 		33F082C51220559E00015347 /* whizwheel_app_icon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F082C41220559E00015347 /* whizwheel_app_icon_57x57.png */; };
@@ -126,6 +132,13 @@
 		331C4D030FDC0F6D00F77F56 /* NavigationPlanDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationPlanDetails.m; sourceTree = "<group>"; };
 		331C4D040FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaturalNumberTextFieldDelegate.m; sourceTree = "<group>"; };
 		331C4D050FDC0F6D00F77F56 /* WindCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindCalculator.h; sourceTree = "<group>"; };
+		33CBC71E12B80FC900B33271 /* whizwheel_app_icon_57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "whizwheel_app_icon_57x57@2x.png"; path = "Resources/whizwheel_app_icon_57x57@2x.png"; sourceTree = "<group>"; };
+		33CBC73B12BA92E500B33271 /* more_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "more_icon@2x.png"; path = "Resources/more_icon@2x.png"; sourceTree = "<group>"; };
+		33CBC74C12BCD71100B33271 /* navigation_arrow_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navigation_arrow_icon@2x.png"; path = "Resources/navigation_arrow_icon@2x.png"; sourceTree = "<group>"; };
+		33CBC75212BCD7DA00B33271 /* wind_arrow_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wind_arrow_icon@2x.png"; path = "Resources/wind_arrow_icon@2x.png"; sourceTree = "<group>"; };
+		33CBC75612BCDBDE00B33271 /* wind_rose_scrawl_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wind_rose_scrawl_icon@2x.png"; path = "Resources/wind_rose_scrawl_icon@2x.png"; sourceTree = "<group>"; };
+		33CBC77712BCDE2400B33271 /* ScalerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalerUtils.h; sourceTree = "<group>"; };
+		33CBC77812BCDE2400B33271 /* ScalerUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ScalerUtils.c; sourceTree = "<group>"; };
 		33E9ADE51112359D00756D72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		33E9ADED111235B000756D72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		33F082C41220559E00015347 /* whizwheel_app_icon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whizwheel_app_icon_57x57.png; path = Resources/whizwheel_app_icon_57x57.png; sourceTree = "<group>"; };
@@ -233,6 +246,8 @@
 			children = (
 				331C4CA00FDC0E8000F77F56 /* main.m */,
 				331C4CA10FDC0E8000F77F56 /* AngleUtils.h */,
+				33CBC77712BCDE2400B33271 /* ScalerUtils.h */,
+				33CBC77812BCDE2400B33271 /* ScalerUtils.c */,
 				331C4CA20FDC0E8000F77F56 /* AngleUtils.c */,
 				331C4CCB0FDC0F4200F77F56 /* WhizWheel_Prefix.pch */,
 			);
@@ -268,6 +283,11 @@
 		3331841B0FDC0CFD0079EA39 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				33CBC75612BCDBDE00B33271 /* wind_rose_scrawl_icon@2x.png */,
+				33CBC75212BCD7DA00B33271 /* wind_arrow_icon@2x.png */,
+				33CBC74C12BCD71100B33271 /* navigation_arrow_icon@2x.png */,
+				33CBC73B12BA92E500B33271 /* more_icon@2x.png */,
+				33CBC71E12B80FC900B33271 /* whizwheel_app_icon_57x57@2x.png */,
 				331C4C910FDC0DD900F77F56 /* whizwheel_app_icon.png */,
 				331C4C860FDC0DBC00F77F56 /* wind_rose_scrawl_icon.png */,
 				33F082C41220559E00015347 /* whizwheel_app_icon_57x57.png */,
@@ -336,6 +356,11 @@
 				331C4CB90FDC0ECF00F77F56 /* ConfigTableCell.xib in Resources */,
 				330A1C4F0FDC1FA10097EC28 /* license.txt in Resources */,
 				33F082C51220559E00015347 /* whizwheel_app_icon_57x57.png in Resources */,
+				33CBC71F12B80FC900B33271 /* whizwheel_app_icon_57x57@2x.png in Resources */,
+				33CBC73C12BA92E500B33271 /* more_icon@2x.png in Resources */,
+				33CBC74D12BCD71100B33271 /* navigation_arrow_icon@2x.png in Resources */,
+				33CBC75312BCD7DA00B33271 /* wind_arrow_icon@2x.png in Resources */,
+				33CBC75712BCDBDE00B33271 /* wind_rose_scrawl_icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +400,7 @@
 				331C4D1E0FDC0F6D00F77F56 /* WindRoseHelpCell.m in Sources */,
 				331C4D1F0FDC0F6D00F77F56 /* NavigationPlanDetails.m in Sources */,
 				331C4D200FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m in Sources */,
+				33CBC77912BCDE2400B33271 /* ScalerUtils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

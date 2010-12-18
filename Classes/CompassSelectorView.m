@@ -1,7 +1,5 @@
 // ***************************************************************************
-//              WhizWheel 1.0.0 - Copyright Vrai Stacey 2009
-//
-// $Id$
+//           WhizWheel 1.0.2 - Copyright Vrai Stacey 2009, 2010
 //
 // This program is free software; you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -21,6 +19,7 @@
 #import "CompassSelectorView.h"
 #import "AngleUtils.h"
 #import "NotificationNames.h"
+#import "ScalerUtils.h"
 #import "TextFormatter.h"
 #import "WindDetails.h"
 
@@ -103,13 +102,16 @@ void drawLine ( CGContextRef context, CGPoint start, CGPoint end, UIColor * stro
                                                     selector: @selector ( handleWindDetailsNotification: )
                                                         name: WindDetailsInternalPublished
                                                       object: nil ];
+        
+        // Get the screen scale - the number of pixels per point
+        screenScale = [ [ UIScreen mainScreen ] scale ];
     }
     
     return self;
 }
 
 - ( void ) drawRect: ( CGRect ) rect
-{    
+{   
     [ super drawRect: rect ];
 
     const float radius = [ self getRadius ];    
@@ -119,11 +121,11 @@ void drawLine ( CGContextRef context, CGPoint start, CGPoint end, UIColor * stro
     
     // If this is the first call to drawRect, render the compass face to an image buffer
     if ( compassFace == nil )
-    {
+    {    
         // Both the compass face and its mask will be drawn to this bitmap - it's the same size, colour space and depth as the view
         CGContextRef bitmapContext = CGBitmapContextCreate ( 0,
-                                                            [ self bounds ].size.width,
-                                                            [ self bounds ].size.height,
+                                                            [ self bounds ].size.width * screenScale,
+                                                            [ self bounds ].size.height * screenScale,
                                                             CGBitmapContextGetBitsPerComponent ( context ),
                                                             CGBitmapContextGetBytesPerRow ( context ),
                                                             CGBitmapContextGetColorSpace ( context ),
@@ -149,6 +151,7 @@ void drawLine ( CGContextRef context, CGPoint start, CGPoint end, UIColor * stro
 
         // The main image can now be combined with the mask image to create the final, correctly transparent, compass face image.
         compassFace = CGImageCreateWithMask ( mainImage, maskImage );
+
         
         // Only the final image is required, the bitmap and the two intermediate images can be released.
         CGContextRelease ( bitmapContext );
@@ -241,8 +244,10 @@ void drawLine ( CGContextRef context, CGPoint start, CGPoint end, UIColor * stro
 
 - ( void ) drawCompassFaceToContext: ( CGContextRef ) context rect: ( CGRect ) rect;
 {
-    const float radius = [ self getRadius ];    
-    const CGPoint centrePoint = [ self getCentrePoint ];
+    // Need to apply the points/pixel radio to the coords/radius
+    const float radius = [ self getRadius ] * screenScale;
+    const CGPoint centrePoint = scalePoint ( [ self getCentrePoint ], screenScale );
+    rect = scaleRect ( rect, screenScale );
 
     // Render with shadows
     CGContextSetShadow ( context, CGSizeMake ( -2.0f, -2.0f ), 3.0 );
@@ -252,7 +257,7 @@ void drawLine ( CGContextRef context, CGPoint start, CGPoint end, UIColor * stro
     CGContextFillRect ( context, rect );
 
     // Select the font for the labels and the font rendering mode
-    UIFont * labelFont = [ UIFont fontWithName: @"Helvetica" size: 10.0f ];
+    UIFont * labelFont = [ UIFont fontWithName: @"Helvetica" size: 10.0f * screenScale ];
     CGContextSelectFont ( context, [ [ labelFont fontName ] UTF8String ], [ labelFont pointSize ], kCGEncodingMacRoman );
     CGContextSetTextDrawingMode ( context, kCGTextFill );
     
@@ -311,6 +316,8 @@ void drawLine ( CGContextRef context, CGPoint start, CGPoint end, UIColor * stro
 
 - ( void ) drawCompassFaceMaskToContext: ( CGContextRef ) context rect: ( CGRect ) rect
 {
+    rect = scaleRect ( rect, screenScale );
+
     // Render with shadows
     CGContextSetShadow ( context, CGSizeMake ( -2.0f, -2.0f ), 3.0 );
 
@@ -318,8 +325,14 @@ void drawLine ( CGContextRef context, CGPoint start, CGPoint end, UIColor * stro
     CGContextSetFillColorWithColor ( context, [ [ UIColor whiteColor ] CGColor ] );
     CGContextFillRect ( context, rect );
 
-    // Draw the outer base of the compass - as this is mask it's all black
-    drawCircle ( context, [ self getCentrePoint ], [ self getRadius ], [ UIColor blackColor ], [ UIColor blackColor ], 2.0f, kCGPathFillStroke );
+    // Draw the outer base of the compass - as this is the mask it's all black
+    drawCircle ( context,
+                 scalePoint ( [ self getCentrePoint ], screenScale ),
+                 [ self getRadius ] * screenScale,
+                 [ UIColor blackColor ],
+                 [ UIColor blackColor ],
+                 2.0f,
+                 kCGPathFillStroke );
 }
 
 #pragma mark -
