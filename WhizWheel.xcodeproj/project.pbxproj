@@ -139,10 +139,10 @@
 		33CBC75612BCDBDE00B33271 /* wind_rose_scrawl_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wind_rose_scrawl_icon@2x.png"; path = "Resources/wind_rose_scrawl_icon@2x.png"; sourceTree = "<group>"; };
 		33CBC77712BCDE2400B33271 /* ScalerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalerUtils.h; sourceTree = "<group>"; };
 		33CBC77812BCDE2400B33271 /* ScalerUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ScalerUtils.c; sourceTree = "<group>"; };
-		33E9ADE51112359D00756D72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		33E9ADED111235B000756D72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		33E9ADE51112359D00756D72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		33E9ADED111235B000756D72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = ../../../../../../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		33F082C41220559E00015347 /* whizwheel_app_icon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whizwheel_app_icon_57x57.png; path = Resources/whizwheel_app_icon_57x57.png; sourceTree = "<group>"; };
-		33FD458F119C949B0060C411 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		33FD458F119C949B0060C411 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = ../../../../../../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -328,7 +328,14 @@
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WhizWheel" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* WhizWheel */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -419,6 +426,7 @@
 				GCC_PREFIX_HEADER = WhizWheel_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = WhizWheel;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -432,6 +440,7 @@
 				GCC_PREFIX_HEADER = WhizWheel_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = WhizWheel;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -464,6 +473,7 @@
 				GCC_PREFIX_HEADER = WhizWheel_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = WhizWheel;
+				SDKROOT = iphoneos;
 			};
 			name = "Distro 1.0.1";
 		};
