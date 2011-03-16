@@ -1,5 +1,5 @@
 // ***************************************************************************
-//              WhizWheel 1.0.1 - Copyright Vrai Stacey 2009 - 2010
+//            WhizWheel 1.0.3 - Copyright Vrai Stacey 2009 - 2011
 //
 // This program is free software; you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -97,7 +97,14 @@
 
 - ( void ) applicationWillTerminate: ( UIApplication * ) application
 {
-    // Save the configuration
+    // Save the configuration - but only if not in multithreaded mode, in MT mode the backgrounding will trigger the
+    // configuration save.
+    if ( [ [ UIDevice currentDevice ] isMultitaskingSupported ] )
+        [ [ Configuration defaultConfiguration ] saveToArchive: [ [ self class ] getConfigurationFilename ] ];
+}
+
+- ( void ) applicationDidEnterBackground: ( UIApplication * ) application
+{
     [ [ Configuration defaultConfiguration ] saveToArchive: [ [ self class ] getConfigurationFilename ] ];
 }
 

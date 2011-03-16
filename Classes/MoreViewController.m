@@ -1,5 +1,5 @@
 // ***************************************************************************
-//            WhizWheel 1.0.1 - Copyright Vrai Stacey 2009 - 2010
+//            WhizWheel 1.0.3 - Copyright Vrai Stacey 2009 - 2011
 //
 // This program is free software; you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -23,8 +23,8 @@
 
 #pragma mark Help text HTML
 
-#define HTML_LICENSE_TEXT "<h1>WhizWheel 1.0.2</h1>\n"                                                                                               \
-                          "<h2>&copy; Vrai Stacey, 2009 - 2010</h2>\n"                                                                                      \
+#define HTML_LICENSE_TEXT "<h1>WhizWheel 1.0.3</h1>\n"                                                                                               \
+                          "<h2>&copy; Vrai Stacey, 2009 - 2011</h2>\n"                                                                                      \
                           "<p>Licensed under the <a href=\"http://www.gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU General Public License</a>, " \
                           "version 2. This software is supplied <b>without warranty</b>, see the GPL license text for more details.</p>\n"           \
                           "<p>The Whizwheel source code can be downloaded from "                                                                     \
@@ -52,8 +52,8 @@
 
 - ( id ) initWithCoder: ( NSCoder * ) coder
 {
-    if ( self = [ super initWithCoder: coder ] )
-    {
+    if ( ( self = [ super initWithCoder: coder ] ) )
+    { 
         sectionDelegates = [ [ NSMutableArray alloc ] init ];
     }
     return self;

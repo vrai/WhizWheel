@@ -1,5 +1,5 @@
 // ***************************************************************************
-//            WhizWheel 1.0.1 - Copyright Vrai Stacey 2009 - 2010
+//           WhizWheel 1.0.3 - Copyright Vrai Stacey 2009 - 2011
 //
 // This program is free software; you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -61,7 +61,7 @@ static Configuration * s_defaultInstance = 0;
 
 - ( id ) init
 {
-    if ( self = [ super init ] )
+    if ( ( self = [ super init ] ) )
     {
         windDirection = DEFAULT_WIND_DIRECTION;
         windSpeed = DEFAULT_WIND_SPEED;
@@ -110,7 +110,7 @@ static Configuration * s_defaultInstance = 0;
 
 - ( id ) initWithCoder: ( NSCoder * ) decoder
 {
-    if ( self = [ super init ] )
+    if ( ( self = [ super init ] ) )
     {
         // The version number is used to determine what can be loaded. Version 1.0.0 has no version information.
         int version = [ decoder decodeIntForKey: CODER_KEY_VERSION ];

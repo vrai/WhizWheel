@@ -1,5 +1,5 @@
 // ***************************************************************************
-//              WhizWheel 1.0.1 - Copyright Vrai Stacey 2009 - 2010
+//            WhizWheel 1.0.3 - Copyright Vrai Stacey 2009 - 2011
 //
 // This program is free software; you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -171,6 +171,7 @@
         
         // Set the text fields to match the new values
         [ self updateTextFields ];
+        [ [ Configuration defaultConfiguration ] setFromWindDetails: newWindDetails ];
     }
 }
 

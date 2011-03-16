@@ -1,7 +1,5 @@
 // ***************************************************************************
-//              WhizWheel 1.0.0 - Copyright Vrai Stacey 2009
-//
-// $Id$
+//            WhizWheel 1.0.3 - Copyright Vrai Stacey 2009 - 2011
 //
 // This program is free software; you can redistribute it and/or modify it
 // under the terms of the GNU General Public License as published by the Free
@@ -34,7 +32,7 @@
 
 - ( id ) initWithSelector: ( SEL ) theValueUpdatedSelector target: ( id ) theSelectorTarget
 {
-    if ( self = [ super init ] )
+    if ( ( self = [ super init ] ) )
     {   
         [ self setValueUpdatedSelector: theValueUpdatedSelector ];
         [ self setValueUpdatedSelectorTarget: theSelectorTarget ];
