@@ -48,12 +48,12 @@
 		331C4D1E0FDC0F6D00F77F56 /* WindRoseHelpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4D010FDC0F6D00F77F56 /* WindRoseHelpCell.m */; };
 		331C4D1F0FDC0F6D00F77F56 /* NavigationPlanDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4D030FDC0F6D00F77F56 /* NavigationPlanDetails.m */; };
 		331C4D200FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 331C4D040FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m */; };
+		33600A971335434500F24695 /* ScalerUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 33600A951335434500F24695 /* ScalerUtils.c */; };
 		33CBC71F12B80FC900B33271 /* whizwheel_app_icon_57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CBC71E12B80FC900B33271 /* whizwheel_app_icon_57x57@2x.png */; };
 		33CBC73C12BA92E500B33271 /* more_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CBC73B12BA92E500B33271 /* more_icon@2x.png */; };
 		33CBC74D12BCD71100B33271 /* navigation_arrow_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CBC74C12BCD71100B33271 /* navigation_arrow_icon@2x.png */; };
 		33CBC75312BCD7DA00B33271 /* wind_arrow_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CBC75212BCD7DA00B33271 /* wind_arrow_icon@2x.png */; };
 		33CBC75712BCDBDE00B33271 /* wind_rose_scrawl_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33CBC75612BCDBDE00B33271 /* wind_rose_scrawl_icon@2x.png */; };
-		33CBC77912BCDE2400B33271 /* ScalerUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 33CBC77812BCDE2400B33271 /* ScalerUtils.c */; };
 		33E9ADE61112359D00756D72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E9ADE51112359D00756D72 /* UIKit.framework */; };
 		33E9ADEE111235B000756D72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E9ADED111235B000756D72 /* Foundation.framework */; };
 		33F082C51220559E00015347 /* whizwheel_app_icon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F082C41220559E00015347 /* whizwheel_app_icon_57x57.png */; };
@@ -132,13 +132,13 @@
 		331C4D030FDC0F6D00F77F56 /* NavigationPlanDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationPlanDetails.m; sourceTree = "<group>"; };
 		331C4D040FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaturalNumberTextFieldDelegate.m; sourceTree = "<group>"; };
 		331C4D050FDC0F6D00F77F56 /* WindCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindCalculator.h; sourceTree = "<group>"; };
+		33600A951335434500F24695 /* ScalerUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ScalerUtils.c; path = "Other Sources/ScalerUtils.c"; sourceTree = "<group>"; };
+		33600A961335434500F24695 /* ScalerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScalerUtils.h; path = "Other Sources/ScalerUtils.h"; sourceTree = "<group>"; };
 		33CBC71E12B80FC900B33271 /* whizwheel_app_icon_57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "whizwheel_app_icon_57x57@2x.png"; path = "Resources/whizwheel_app_icon_57x57@2x.png"; sourceTree = "<group>"; };
 		33CBC73B12BA92E500B33271 /* more_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "more_icon@2x.png"; path = "Resources/more_icon@2x.png"; sourceTree = "<group>"; };
 		33CBC74C12BCD71100B33271 /* navigation_arrow_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navigation_arrow_icon@2x.png"; path = "Resources/navigation_arrow_icon@2x.png"; sourceTree = "<group>"; };
 		33CBC75212BCD7DA00B33271 /* wind_arrow_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wind_arrow_icon@2x.png"; path = "Resources/wind_arrow_icon@2x.png"; sourceTree = "<group>"; };
 		33CBC75612BCDBDE00B33271 /* wind_rose_scrawl_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wind_rose_scrawl_icon@2x.png"; path = "Resources/wind_rose_scrawl_icon@2x.png"; sourceTree = "<group>"; };
-		33CBC77712BCDE2400B33271 /* ScalerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScalerUtils.h; sourceTree = "<group>"; };
-		33CBC77812BCDE2400B33271 /* ScalerUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ScalerUtils.c; sourceTree = "<group>"; };
 		33E9ADE51112359D00756D72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		33E9ADED111235B000756D72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = ../../../../../../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		33F082C41220559E00015347 /* whizwheel_app_icon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whizwheel_app_icon_57x57.png; path = Resources/whizwheel_app_icon_57x57.png; sourceTree = "<group>"; };
@@ -246,8 +246,8 @@
 			children = (
 				331C4CA00FDC0E8000F77F56 /* main.m */,
 				331C4CA10FDC0E8000F77F56 /* AngleUtils.h */,
-				33CBC77712BCDE2400B33271 /* ScalerUtils.h */,
-				33CBC77812BCDE2400B33271 /* ScalerUtils.c */,
+				33600A951335434500F24695 /* ScalerUtils.c */,
+				33600A961335434500F24695 /* ScalerUtils.h */,
 				331C4CA20FDC0E8000F77F56 /* AngleUtils.c */,
 				331C4CCB0FDC0F4200F77F56 /* WhizWheel_Prefix.pch */,
 			);
@@ -407,7 +407,7 @@
 				331C4D1E0FDC0F6D00F77F56 /* WindRoseHelpCell.m in Sources */,
 				331C4D1F0FDC0F6D00F77F56 /* NavigationPlanDetails.m in Sources */,
 				331C4D200FDC0F6D00F77F56 /* NaturalNumberTextFieldDelegate.m in Sources */,
-				33CBC77912BCDE2400B33271 /* ScalerUtils.c in Sources */,
+				33600A971335434500F24695 /* ScalerUtils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -437,7 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -473,7 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -509,7 +509,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -521,6 +521,42 @@
 				VALID_ARCHS = "armv7 i386";
 			};
 			name = "Distro 1.0.1";
+		};
+		33600A931332A0E600F24695 /* Distro 1.0.3 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "";
+			};
+			name = "Distro 1.0.3";
+		};
+		33600A941332A0E600F24695 /* Distro 1.0.3 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WhizWheel_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = WhizWheel;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 i386 armv6";
+			};
+			name = "Distro 1.0.3";
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -566,6 +602,7 @@
 				1D6058950D05DD3E006BFB54 /* Release */,
 				3329D07412204814002A8F38 /* Distro 1.0.1 */,
 				3323BD8412BD144F00C5FE8C /* Distro 1.0.2 */,
+				33600A941332A0E600F24695 /* Distro 1.0.3 */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -577,6 +614,7 @@
 				C01FCF5008A954540054247B /* Release */,
 				3329D07312204814002A8F38 /* Distro 1.0.1 */,
 				3323BD8312BD144F00C5FE8C /* Distro 1.0.2 */,
+				33600A931332A0E600F24695 /* Distro 1.0.3 */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
